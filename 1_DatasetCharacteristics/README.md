@@ -6,7 +6,7 @@
 
 ### Dataset Source
 
-- **Dataset Link:** [Provide a direct link to your dataset. If the dataset is private, explain the reason and provide contact information for the dataset owner]
+- **Dataset Link:** [Link to the dataset on Huggingface](https://huggingface.co/datasets/bjoern-doege/aesthetic-emotions-map)
 - **Dataset Owner/Contact:** Björn Döge, bjoern.doege@icloud.com
 
 ### Dataset Characteristics
@@ -16,7 +16,7 @@
 
 ### Target Variable/Label
 
-- **Label Name:** Dataset consists only of an image folder and no csv file. There are folders for training, validation, and testing, each containing subfolders for the different classes (styles).
+- **Label Name:** Dataset consists only of an image folder and no csv file. There are folders for training, validation, and testing, each containing subfolders for the different classes (emotion clusters).
 - **Label Type:** Classification
 - **Label Description:** The label represents one of 8 aesthetic emotion categories.
 - **Label Values:**
@@ -30,24 +30,168 @@
   - **Serene Beauty:** Relaxation combined with awe, beauty, enchantment, being moved, and nostalgia. Calming yet emotionally resonant — quietly beautiful and gently moving without being activating.
 - **Label Distribution:** Images are split into training (70%), validation (15%), and test (15%) sets with the following distribution:
 
-| Label                 | train       | validation  | test        |
-| --------------------- | ----------- | ----------- | ----------- |
-| Sublime Activation    | 896 (19.0%) | 192 (18.8%) | 208 (19.1%) |
-| Intellectual Unease   | 1088 (23%)  | 240 (23.4)  | 240 (22.0%) |
-| Energetic Playfulness | 256 (5.4%)  | 48 (4.7%)   | 64 (5.9%)   |
-| Lighthearted Humor    | 624 (13.2%) | 144 (14.0%) | 144 (13.2%) |
-| Aesthetic Emptiness   | 368 (7.8%)  | 80 (7.8%)   | 80 (7.4%)   |
-| Melancholic           | 400 (8.5%)  | 96 (9.4%)   | 96 (8.8%)   |
-| Pure Calm             | 528 (11.2%) | 112 (10.9%) | 128 (11.8%) |
-| Serene Beauty         | 560 (11.9%) | 112 (10.9%) | 128 (11.8%) |
-|                       | 4720        | 1024        | 1088        |
+<table>
+  <tr>
+    <td rowspan="2">
+      Label
+    </td>
+    <td colspan="3">
+      train (70%)
+    </td>
+    <td colspan="3">
+      validation (15%)
+    </td>
+    <td colspan="3">
+      test (15%)
+    </td>
+  </tr>
+  <tr>
+    <td>images</td>
+    <td>styles</td>
+    <td>percentage</td>
+    <td>images</td>
+    <td>styles</td>
+    <td>percentage</td>
+    <td>images</td>
+    <td>styles</td>
+    <td>percentage</td>
+  </tr>
+
+  <tr>
+    <td>Sublime Activation</td>
+    <td>896</td>
+    <td>56</td>
+    <td>19 %</td>
+    <td>192</td>
+    <td>12</td>
+    <td>18.8 %</td>
+    <td>208</td>
+    <td>13</td>
+    <td>19.1 %</td>
+  </tr>
+
+  <tr>
+    <td>Intellectual Unease</td>
+    <td>1088</td>
+    <td>68</td>
+    <td>23 %</td>
+    <td>240</td>
+    <td>15</td>
+    <td>23.4 %</td>
+    <td>240</td>
+    <td>15</td>
+    <td>22.0 %</td>
+  </tr>
+
+  <tr>
+    <td>Energetic Playfulness</td>
+    <td>256</td>
+    <td>16</td>
+    <td>5.4 %</td>
+    <td>48</td>
+    <td>3</td>
+    <td>4.7 %</td>
+    <td>64</td>
+    <td>4</td>
+    <td>5.9 %</td>
+  </tr>
+
+  <tr>
+    <td>Lighthearted Humor</td>
+    <td>624</td>
+    <td>39</td>
+    <td>13.2 %</td>
+    <td>144</td>
+    <td>9</td>
+    <td>14.0 %</td>
+    <td>144</td>
+    <td>9</td>
+    <td>13.2 %</td>
+  </tr>
+
+  <tr>
+    <td>Aesthetic Emptiness</td>
+    <td>368</td>
+    <td>23</td>
+    <td>7.8 %</td>
+    <td>80</td>
+    <td>5</td>
+    <td>7.8 %</td>
+    <td>80</td>
+    <td>5</td>
+    <td>7.4 %</td>
+  </tr>
+
+  <tr>
+    <td>Melancholic</td>
+    <td>400</td>
+    <td>25</td>
+    <td>8.5 %</td>
+    <td>96</td>
+    <td>6</td>
+    <td>9.4 %</td>
+    <td>96</td>
+    <td>6</td>
+    <td>8.8 %</td>
+  </tr>
+
+  <tr>
+    <td>Pure Calm</td>
+    <td>528</td>
+    <td>33</td>
+    <td>11.2 %</td>
+    <td>112</td>
+    <td>7</td>
+    <td>10.9 %</td>
+    <td>128</td>
+    <td>8</td>
+    <td>11.8 %</td>
+  </tr>
+
+  <tr>
+    <td>Serene Beauty</td>
+    <td>560</td>
+    <td>35</td>
+    <td>11.9 %</td>
+    <td>112</td>
+    <td>7</td>
+    <td>10.9 %</td>
+    <td>128</td>
+    <td>8</td>
+    <td>11.8 %</td>
+  </tr>
+
+  <tr>
+    <td><strong>Total</strong></td>
+    <td><strong>4720</strong></td>
+    <td><strong>295</strong></td>
+    <td><strong>100 %</strong></td>
+    <td><strong>1024</strong></td>
+    <td><strong>64</strong></td>
+    <td><strong>100 %</strong></td>
+    <td><strong>1088</strong></td>
+    <td><strong>68</strong></td>
+    <td><strong>100 %</strong></td>
+  </tr>
+</table>
+
+The dataset was split at the style level rather than the image level to prevent data leakage between splits. Since each style is represented by multiple highly similar images across motifs and variations, random image-level splitting could place visually related samples in both training and evaluation sets. All images belonging to a given style were therefore assigned to a single split, enabling evaluation on previously unseen styles.
 
 ### Feature Description
 
 The features in the dataset are the pixel values of the images, which are represented as 3 color channels (RGB) with 50.176 pixels per image (224x224 pixels) and intensity values between 0 and 255. Image dimensions were chosen to conform to the ImageNet standard, which is commonly used in computer vision tasks. The mean and standard deviation of the pixel values across the dataset are as follows:
 
-mean: [0.5111283659934998, 0.48830345273017883, 0.46479079127311707],\
-std: [0.3433663249015808, 0.3207928538322449, 0.32255250215530396]
+```python
+mean = [0.5111283659934998,
+        0.48830345273017883,
+        0.46479079127311707]
+```
+
+```python
+std = [0.3433663249015808,
+       0.3207928538322449,
+       0.32255250215530396]
+```
 
 ## Exploratory Data Analysis
 
