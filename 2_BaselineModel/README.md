@@ -12,7 +12,8 @@
 ### Model Performance
 
 - **Evaluation Metric:** Accuracy, F1-Score, Precision, Recall
-- **Performance Score:** 47.15% accuracy, F1-score of 0.4593, precision of 0.4639, and recall of 0.4715 on the test set.
+- **Performance Score:** 39.98% accuracy, F1-score of 0.3748, precision of 0.3883, recall of 0.3998, and loss of 2.9650 on the test set.
+- **Metrics Artifact:** [baseline_metrics.csv](baseline_metrics.csv)
 - **Cross-Validation Score:** Did not perform cross-validation for the baseline model, because splits were done manually.
 
 ### Evaluation Methodology
