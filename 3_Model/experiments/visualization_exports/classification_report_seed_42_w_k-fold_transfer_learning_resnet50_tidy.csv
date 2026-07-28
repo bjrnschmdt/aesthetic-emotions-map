@@ -1,0 +1,45 @@
+label,metric,value
+aesthetic_emptiness,precision,0.4583333333333333
+energetic_playfulness,precision,0.24675324675324675
+intellectual_unease,precision,0.6651982378854625
+lighthearted_humor,precision,0.7265625
+melancholic,precision,0.47115384615384615
+pure_calm,precision,0.4551282051282051
+serene_beauty,precision,0.4
+sublime_activation,precision,0.6627218934911243
+accuracy,precision,0.5422794117647058
+macro avg,precision,0.5107314078431523
+weighted avg,precision,0.559986015519043
+aesthetic_emptiness,recall,0.4125
+energetic_playfulness,recall,0.296875
+intellectual_unease,recall,0.6291666666666667
+lighthearted_humor,recall,0.6458333333333334
+melancholic,recall,0.5104166666666666
+pure_calm,recall,0.5546875
+serene_beauty,recall,0.484375
+sublime_activation,recall,0.5384615384615384
+accuracy,recall,0.5422794117647058
+macro avg,recall,0.5090394631410255
+weighted avg,recall,0.5422794117647058
+aesthetic_emptiness,f1-score,0.4342105263157895
+energetic_playfulness,f1-score,0.2695035460992908
+intellectual_unease,f1-score,0.6466809421841542
+lighthearted_humor,f1-score,0.6838235294117647
+melancholic,f1-score,0.49
+pure_calm,f1-score,0.5
+serene_beauty,f1-score,0.4381625441696113
+sublime_activation,f1-score,0.5941644562334217
+accuracy,f1-score,0.5422794117647058
+macro avg,f1-score,0.507068193051754
+weighted avg,f1-score,0.5481342793799364
+aesthetic_emptiness,support,80.0
+energetic_playfulness,support,64.0
+intellectual_unease,support,240.0
+lighthearted_humor,support,144.0
+melancholic,support,96.0
+pure_calm,support,128.0
+serene_beauty,support,128.0
+sublime_activation,support,208.0
+accuracy,support,0.5422794117647058
+macro avg,support,1088.0
+weighted avg,support,1088.0
