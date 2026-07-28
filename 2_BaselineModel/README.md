@@ -18,7 +18,7 @@
 
 ### Evaluation Methodology
 
-- **Data Split:** Manual split with Train/Validation/Test split ratios, e.g., 70/15/15
+- **Data Split:** Manual split with Train/Validation/Test split ratio of 70%/15%/15%
 - **Evaluation Metrics:** Accuracy, because it provides a straightforward measure of overall performance. F1-score, precision, and recall were also used to provide a more comprehensive evaluation of the model's performance, especially because of class imbalances in the dataset.
 
 ### Metric Practical Relevance
